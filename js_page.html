@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>javascript page</title>
+        <link id="pagestyle" rel="stylesheet" href="./style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/631859cb24.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <noscript><h1>sorry, you need javascript to run this page</h1></noscript>   <!-- for people who have js turned off on their computer -->
+        <a href="#" onclick="alert('welcome')">click me!</a> 
+        <p id="demo"> Hello! </p>
+        <button onclick="document.getElementById('demo').innerHTML = 'new text';">change text</button>    <!-- innerHTML refers to the hello! in the p tag -->
+        <button onclick="document.getElementById('demo').innerHTML = 'Hello!';">revert text</button>
+        <button onclick="myFun();">alert</button>
+        <button onclick="darkMode();">darkMode</button>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
+
