@@ -2,12 +2,21 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Sydney's website</title>
+        <title>Sydney Biggar</title>
         <link rel="stylesheet" href="./style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Red+Hat+Display&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/631859cb24.js" crossorigin="anonymous"></script>
     </head>
+
+
     <body>
         <header>
-            <nav>            
+            <nav>
+                <a id="title" href="#home">Sydney Biggar</a>
                 <ul>
                     <li><a href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
@@ -24,45 +33,49 @@
         <h2></h2>
         <h3></h3>
 
-        <section id="home" style="height: 100vh">
-            <div style="display: flex;">
-                <div style="display: flex;">
-                    <img src="./images/me.jpg" style="height: 300px;">
-                </div>
 
-                <div>
-                    <h1>Hey I'm Sydney</h1>
-                </div>
-                
+        <!-- HOME -->
+        <section class="home" id="home">
+            <img src="./images/light.jpg" class="background-image">
+            <div>
+                <img src="./images/me.jpg">
             </div>
+
+            <div>
+                <h1>Hey I'm Sydney</h1>
+                <h2>second header blah blah blah</h2>
+            </div>
+                
         </section>
 
-        <section id="about" style="height: 100vh">
-            <div style="display: flex;">
-                <div>
-                    <h1>About Me</h1>
 
-                    <p>icoievjpeijvpjwevije</p>
-                    <h2>
-                        My sister's name is Abby.
-                    </h2>
-                    <h2>
-                        My dog's name is Tucker.
-                    </h2>
-                </div>
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <div>
+                <h1>About Me</h1>
 
-                <div style="display: flex;">
-                    <img src="./images/me and ab.jpg" style="height: 200px;">
-                    <img src="./images/tucker.jpg" style="height: 200px;">
-                </div>
+                <p>icoievjpeijvpjwevije</p>
+                <h2>
+                    My sister's name is Abby.
+                </h2>
+                <h2>
+                    My dog's name is Tucker.
+                </h2>
+            </div>
+
+            <div>
+                <img src="./images/me and ab.jpg">
+                <img src="./images/tucker.jpg">
             </div>
         </section>
         
-        <section id="activities" style="height: 100vh">
+
+        <!-- ACTIVITIES -->
+        <section class="activities" id="activities">
             <h1>Activities</h1>
-            <div style="display: flex;">
+            <div class="activities-container">
                 <div>
-                    <img src="./images/paint.png" style="height: 250px;">
+                    <img src="./images/paint.png">
                     <h2>Painting</h2>
                     <p>
                         i paint
@@ -70,7 +83,7 @@
                 </div>
 
                 <div>
-                    <img src="./images/sleep.png" style="height: 250px;">
+                    <img src="./images/sleep.png">
                     <h2>Sleeping</h2>
                     <p>
                         i sleep
@@ -79,27 +92,36 @@
             </div>
         </section>
         
-        <section id="contact" style="height: 100vh">
-            <h1>Contact</h1>
-            <div style="display: flex;">
-                <img src="./images/IMG_1465.jpg" style="height: 500px;">
+
+
+        <!-- CONTACT -->
+
+        <section class="contact" id="contact">
+            <div><img src="./images/IMG_1465.jpg"></div>
+            <div>
+                <h1>Contact</h1>
                 <form action="mailto:sydneyebiggar@gmail.com" method="post" enctype="text/plain">
-                    <div style="display: flex; flex-direction:column">
-                        <label>Name:</label>
-                        <input type="text" name="Your name" placeholder="Enter your name here">
-                        <label>Email:</label>
-                        <input type="email" name="Your email" placeholder="Enter your email here">
-                        <label>Message:</label>
-                        <textarea name="Your message" cols="50" rows="10" placeholder="Enter your message here"></textarea>
-                        <input type="Submit">
                     
-                    </div>
+                    <label>Name:</label>
+                    <input type="text" name="Your name" placeholder="Enter your name here"> <br>
+                    <label>Email:</label>
+                    <input type="email" name="Your email" placeholder="Enter your email here"> <br>
+                    <label>Message:</label> <br>
+                    <textarea name="Your message" cols="50" rows="10" placeholder="Enter your message here"></textarea> <br>
+                    <input type="Submit">
+
                 </form>
 
             </div>
         </section>
 
-        <div></div>
+        <footer>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.google.com/?gws_rd=ssl"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+            <p>(123) 456 - 7890 | email@psu.edu</p>
+        </footer>
+
     </body>
     <script></script> 
 </html>

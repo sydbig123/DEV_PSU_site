@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;       /* base is 400 for font */
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    min-height: 105vh;  /* percent of the viewing height of the screen */
+    display: flex;
+    /* justify-content: center; */
+}
+
+h1 {
+    /* ram: 1 rem is the default font is html which is about 16px - rem is more uniform */
+    font-size: 5rem;
+    line-height: 2;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+img {
+    width: 400px;
+    margin-bottom: 50px;
+    border: 12px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover { /* when you hover over something with a tag a then it will follow the code below */
+    color: #b3b3b3;
+}
+
+form {
+    line-height: 2;
+    font-size: 1.25rem;
+}
+
+i {
+    font-size: 1.75rem;
+    margin: 0 10px 10px 10px;
+}
+
+/* navbar */
+nav {
+    height: 64px;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 30px;
+}
+
+#title {
+    font-size: 1.8rem;
+    font-family: 'Red Hat Display', sans-serif;
+    text-transform: uppercase;
+}
+
+
+/* home section */
+
+.home div {
+    transform: translateY(64px);
+    margin: 5%;
+}
+
+.background-image {
+    border: 0px;
+    width: 100%;
+    height: 105%;
+    object-fit: cover;
+    position: absolute;
+}
+
+
+/* about section */
+
+.about div {
+    margin: 8%;
+}
+
+
+/* activities section */
+
+.activities {
+    display: block;
+    background-color: #AEE5FF;
+    padding: 50px 0 100px 0;  /* top right bottom left */
+    text-align: center;
+}
+
+.activities-container {
+    display: flex;
+    margin: 0 8%;       /* top&bottom, left&right */
+    justify-content: space-between;
+}
+
+.activities-container p {
+    padding: 0 8%;
+}
+
+.activities-container img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;     /* border radius effects the corners; 50% is just enough that it turns into a circle */
+}
+
+
+/* contact section */
+
+.contact {
+    justify-content: center;
+}
+
+.contact div {
+    margin: 5%;
+}
+
+
+/* footer section */
+
+footer {
+    height: 125px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-top: 25px;
+    text-align: center;
+}
